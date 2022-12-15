@@ -1,0 +1,37 @@
+:root{
+    background-color: black;
+}
+
+.wrapper{
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900);
+
+h1, h2{
+    font-family: 'Roboto Slab';
+    background: -webkit-linear-gradient(rgb(195, 165, 56),#770404);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1{
+    text-align: center;
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:300,regular,500,600,700,800,900);
+
+p {
+    font-family: 'Frank Ruhl Libre';
+    font-size: 1.25rem;
+    line-height: 1.4rem;
+    text-indent: 1em;
+    color:#eee;
+}
