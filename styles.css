@@ -12,7 +12,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900);
 
 h1, h2{
-    font-family: 'Roboto Slab';
+    font-family: 'Roboto Slab','Times New Roman', Times, serif;
     background: -webkit-linear-gradient(rgb(195, 165, 56),#770404);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -35,7 +35,7 @@ h2{
 p {
     padding-left: 1em;
     padding-right: 1em;
-    font-family: 'Frank Ruhl Libre';
+    font-family: 'Frank Ruhl Libre',Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.25rem;
     line-height: 1.4rem;
     color:#eee;
@@ -66,3 +66,38 @@ span{
     text-align: center;
 }
 
+
+
+.smallpics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2em;
+}
+
+.smallpics img{
+    border-radius: 24px;
+}
+
+
+#one, #two {
+  height: 20rem;
+  /* style="height: 20rem" */
+}
+
+.bigpic {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bigpic img{
+    border-radius: 24px;
+    width: 48rem;
+}
+
+.emphasis{
+    font-weight: bold;
+    color: #04a9e4;
+}
