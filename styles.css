@@ -102,3 +102,32 @@ span{
     color: #04a9e4;
     font-size: 1.1em;
 }
+
+/* TWINKLING EFFECT  */
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+.stars, .twinkling {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(./assets/star_effect/stars.png) repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url(./assets/star_effect/twinkling.png) repeat top center;
+  z-index:1;
+  animation:move-twink-back 200s linear infinite;
+}
+
