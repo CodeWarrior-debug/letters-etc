@@ -1,133 +1,212 @@
-:root{
-    background-color: black;
+:root {
+  background-color: black;
 }
 
-.wrapper{
-    padding-top: 16px;
-    max-width: 850px;
-    margin-left: auto;
-    margin-right: auto;
+.wrapper {
+  padding-top: 16px;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900);
 
-h1, h2{
-    font-family: 'Roboto Slab','Times New Roman', Times, serif;
-    background: -webkit-linear-gradient(rgb(195, 165, 56),#770404);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+h1,
+h2 {
+  font-family: "Roboto Slab", "Times New Roman", Times, serif;
+  background: -webkit-linear-gradient(rgb(195, 165, 56), #770404);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-h1{
-    text-align: center;
-    font-size: 4rem;
-    width: 100vw;
-    margin-left: auto;
-    margin-right: auto;
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-h2{
-    font-size: 2.5rem;
+h2 {
+  font-size: 2.5rem;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:300,regular,500,600,700,800,900);
 
 p {
-    padding-left: 1em;
-    padding-right: 1em;
-    font-family: 'Frank Ruhl Libre',Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.25rem;
-    line-height: 1.4rem;
-    color:#eee;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-family: "Frank Ruhl Libre", Cambria, Cochin, Georgia, Times,
+    "Times New Roman", serif;
+  font-size: 1.25rem;
+  line-height: 1.4rem;
+  color: #eee;
 }
 
-blockquote{
-    color: #eee;
-    font-size: 1.1rem;
+blockquote {
+  color: #eee;
+  font-size: 1.1rem;
 }
 
-span{
-    color: #eee;
+span {
+  color: #eee;
 }
 
-.caption{
-    text-align: left;
-    font-size:1.75rem;
+.caption {
+  text-align: left;
+  font-size: 1.75rem;
 }
 
-.parentheses{
-    font-size: 1rem;
+.parentheses {
+  font-size: 1rem;
 }
 
-.heading{
-    background: #000;
-    top:4rem;
-    width: 100vw;
-    text-align: center;
+.heading {
+  background: #000;
+  top: 4rem;
+  width: 100vw;
+  text-align: center;
 }
 
-
-
-.smallpics{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 2em;
+.smallpics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2em;
 }
 
-.smallpics img{
-    border-radius: 24px;
+.smallpics img {
+  border-radius: 24px;
 }
 
-
-#one, #two {
+#one,
+#two {
   height: 20rem;
-  /* style="height: 20rem" */
 }
 
 .bigpic {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.bigpic img{
-    border-radius: 24px;
-    width: 48rem;
+.bigpic img {
+  border-radius: 24px;
+  width: 48rem;
 }
 
-.emphasis{
-    font-weight: bold;
-    color: #04a9e4;
-    font-size: 1.1em;
+.emphasis {
+  font-weight: bold;
+  color: #04a9e4;
+  font-size: 1.1em;
+}
+
+p .last {
+  margin-bottom: 8rem;
 }
 
 /* TWINKLING EFFECT  */
 @keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
 }
 
-.stars, .twinkling {
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  width:100%;
-  height:100%;
-  display:block;
+.stars,
+.twinkling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 655vh;
+  display: block;
 }
 
 .stars {
-  background:#000 url(./assets/star_effect/stars.png) repeat top center;
-  z-index:0;
+  background: #000 url(./assets/star_effect/stars.png) repeat top center;
+  z-index: 0;
 }
 
-.twinkling{
-  background:transparent url(./assets/star_effect/twinkling.png) repeat top center;
-  z-index:1;
-  animation:move-twink-back 200s linear infinite;
+.twinkling {
+  background: transparent url(./assets/star_effect/twinkling.png) repeat top
+    center;
+  z-index: 1;
+  animation: move-twink-back 200s linear infinite;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 720px) {
+  #one,
+  #two {
+    height: 10rem;
+  }
+
+  .bigpic img {
+    border-radius: 5px;
+    width: 24rem;
+  }
+  .stars,
+  .twinkling {
+    height: 655vh;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 721px) {
+  #one,
+  #two {
+    height: 10rem;
+  }
+
+  .bigpic img {
+    border-radius: 5px;
+    width: 18rem;
+  }
+
+  .stars,
+  .twinkling {
+    height: 640vh;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #one,
+  #two {
+    height: 18rem;
+  }
+
+  .bigpic img {
+    border-radius: 5px;
+    width: 46rem;
+  }
+
+  .stars,
+  .twinkling {
+    height: 455vh;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #one,
+  #two {
+    height: 20rem;
+  }
+
+  .bigpic img {
+    border-radius: 5px;
+    width: 50rem;
+  }
+
+  .stars,
+  .twinkling {
+    height: 500vh;
+  }
+}
